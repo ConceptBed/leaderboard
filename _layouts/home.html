@@ -605,10 +605,12 @@
       <table id="example" class="display" style="width: 100%">
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Sku</th>
-            <th>Price</th>
-            <th>Description</th>
+            <th>Method</th>
+            <th>Base Model</th>
+            <th>Optimization</th>
+            <th>Concept Replication (&#x2193;)</th>
+            <th>Concept Alignment (&#x2193;)</th>
+            <th>Composition Alignment (&#x2193;)</th>
           </tr>
         </thead>
 
@@ -616,20 +618,24 @@
           <!--For loop that iterates over markdown frontmatter in _skus folder-->
           {% for sku in site.skus %}
           <tr>
-            <td>{{ sku.Name }}</td>
-            <td>{{ sku.Sku }}</td>
-            <td>{{ sku.Price }}</td>
-            <td>{{ sku.content | markdownify }}</td>
+            <td>{{ sku.method }}</td>
+            <td>{{ sku.model }}</td>
+            <td>{{ sku.optimization }}</td>
+            <td>{{ sku.concept_replication }}</td>
+            <td>{{ sku.concept_alignment }}</td>
+            <td>{{ sku.composition_alignment }}</td>
           </tr>
           {% endfor %}
         </tbody>
 
         <tfoot>
           <tr>
-            <th>Name</th>
-            <th>Sku</th>
-            <th>Price</th>
-            <th>Description</th>
+            <th>Method</th>
+            <th>Base Model</th>
+            <th>Optimization</th>
+            <th>Concept Replication (&#x2193;)</th>
+            <th>Concept Alignment (&#x2193;)</th>
+            <th>Composition Alignment (&#x2193;)</th>
           </tr>
         </tfoot>
       </table>
