@@ -618,7 +618,7 @@
           <!--For loop that iterates over markdown frontmatter in _skus folder-->
           {% for sku in site.skus %}
           <tr>
-            <td>{{ sku.method }}</td>
+            <td><a href="{{ sku.paper }}">{{ sku.method }}</a></td>
             <td>{{ sku.model }}</td>
             <td>{{ sku.optimization }}</td>
             <td>{{ sku.concept_replication }}</td>
